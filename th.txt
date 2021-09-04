@@ -1,0 +1,11 @@
+1)loading driver
+2)getting connection
+
+3)statement
+4)query
+5)submit query
+
+6)resuktset
+
+
+7)transaction management
