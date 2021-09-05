@@ -9,3 +9,44 @@
 
 
 7)transaction management
+
+employee   ---- --  >    ROLE
+
+
+
+emp role
+
+fk-->
+
+
+create table role(rid int primary key auto_increment,rname varchar(30));
+
+create table employee(eid int primary key auto_increment,ename varchar(30),eemail varchar(30),epassword varchar(30),rid int,FOREIGN KEY(rid) REFERENCES role(rid));
+
+insert into role(rname)values('Developer')
+
+
+insert into employee(ename,eemail,epassword,rid)values('samir','sam@gmail.com','sam123',3)
+
+
+select  * from employee natural join role;
+
+
+
+
+Hw
+-------------------------------
+
+salary --> age--->
+
+highest paid emp
+youngest emp
+youngest salry heighest ---> 18 18 18 12 50 96
+
+
+
+
+
+
+
+
